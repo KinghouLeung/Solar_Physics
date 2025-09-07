@@ -1,4 +1,4 @@
-# Solar Physics
+# Solar Physics Data Pipeline
 These Python scripts are written for three-channel solar observation data processing pipeline, including $\mathrm{H}\alpha$, $\mathrm{Ca}K$ and white light, at Shenzhen Astronomical Observatory. Based on the previous IDL version by Dr. Xiaofan Wang (wxf@nao.cas.cn), I updated the following aspects in my program.
 1. Apart from filtering the candidate points of the limbs by gradient (`sobel`), I also used a cut-off level of the intensity of the image (after being smoothed by a `uniform filter`) to recognize the radial range of the limbs.
 2. To reduce the influence of too-strong flares or limbs when finding the solar radius in the observed image, I applied `np.percentile(data, [1, 99])` to the original input data to clip the outliers.
