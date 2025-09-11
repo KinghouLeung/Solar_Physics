@@ -11,3 +11,4 @@ These Python scripts are written for three-channel solar observation data proces
 \end{equation*}
 4. In $\mathrm{H}\alpha$ images, I further added one step to strengthen the limbs feature linearly so that we can intuitively view the active edge regions without stretching the histogram.
 5. I use a function-based method to process the .fits data, so after calculating each .fits image, it will free the memory automatically (written for PCs). What's more, I also use a forced cleanup function every several images to further release the memory.
+6. When it comes to corrupted or damaged data files, just manually delete them and then continue.
